@@ -1,0 +1,223 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#containerDiv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+#headerDiv {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#headerDiv a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#headerDiv a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#welcomeSpan {
+    font-size: 1.2em;
+}
+
+/* Navigation Panel */
+#navigationDiv {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#navigationDiv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigationDiv li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navigationDiv a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#navigationDiv a:hover {
+    background-color: #f39c12;
+}
+
+#navigationDiv .txtNav input {
+    padding: 5px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#navigationDiv .searchNav input {
+    padding: 5px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Image Slider */
+#imgSlides {
+    position: relative;
+    margin: 20px 0;
+}
+
+#imgSlides img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+#ulThumbs {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#ulThumbs li {
+    display: inline-block;
+    margin: 5px;
+}
+
+#ulThumbs img {
+    width: 80px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+#ulThumbs img:hover {
+    opacity: 0.7;
+}
+
+/* Featured Products */
+#featuredSlides {
+    margin: 20px 0;
+}
+
+#featuredSlides .slide {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#featuredSlides .slide img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#featuredSlides .slide img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+#footerDiv {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#footerDiv a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#footerDiv a:hover {
+    text-decoration: underline;
+}
+
+/* Content Box */
+#content1, #content2 {
+    padding: 20px;
+}
+
+#content1 h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+/* Box Div 1 */
+#indexBoxDiv1 {
+    margin-bottom: 30px;
+}
+
+/* Box Div 2 */
+#indexBoxDiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#indexBoxDiv3 {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+#indexBoxDiv3 h4 {
+    font-size: 2em;
+    color: #f39c12;
+}
+
+#indexBoxDiv3 p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    #navigationDiv ul {
+        display: block;
+        text-align: center;
+    }
+
+    #navigationDiv li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #indexBoxDiv2 {
+        flex-direction: column;
+    }
+
+    #featuredSlides .slide {
+        flex-direction: column;
+        align-items: center;
+    }
+}
